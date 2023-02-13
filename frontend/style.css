@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body > div.first, 
+.first.most-inner {
+  border-bottom: 10px solid red;
+}
+
+div.first {
+  border-radius: 50% 50% 0 0;
+}
+
+div.first + div {
+  border-left: 10px solid purple;
+}
+
+div.most-inner {
+  border-radius: 50%
+}
+
+div.first.most-inner::before {
+  content: 'Ő';
+}
+
+div.first.most-inner::after {
+  content: 'Másik szó';
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #009bd3;
+}
+
+
+div { 
+  height: 100vh;
+  width: 100vh;
+  background-color: #0700d3;
+}
+
+div > div {
+  height: 90vh;
+  width: 90vh;
+  background-color: #009bd3;
+}
+
+div > div > div {
+  height: 80vh;
+  width: 80vh;
+  background-color: #47e7e2;
+}
+
+div > div > div > div {
+  height: 70vh;
+  width: 70vh;
+  background-color: #0fde77;
+}
+
+div > div > div > div > div {
+  height: 60vh;
+  width: 60vh;
+  background-color: #2fefb2;
+}
+
+div > div > div > div > div > div {
+  height: 50vh;
+  width: 50vh;
+  background-color: #2fef62;
+}
+
+div > div > div > div > div > div > div {
+  height: 40vh;
+  width: 40vh;
+  background-color: #a9ef2f;
+}
+
+div > div > div > div > div > div > div > div {
+  height: 30vh;
+  width: 30vh;
+  background-color: #e5ef2f;
+}
+
+div > div > div > div > div > div > div > div > div {
+  height: 20vh;
+  width: 20vh;
+  background-color: #efc22f;
+}
+
+div > div > div > div > div > div > div > div > div > div {
+  height: 10vh;
+  width: 10vh;
+  background-color: #ef6f2f;
+}
