@@ -1,97 +1,76 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
+body {
+  font: 1em Tahoma, sans-serif;
+  background-color: beige;
+  color: #333;
+  /*max-width: 660px;*/
+  margin: 0 auto;
 }
 
-body > div.first, 
-.first.most-inner {
-  border-bottom: 10px solid red;
+/*
+h1 {
+  border: 1px solid;
 }
+*/
 
-div.first {
-  border-radius: 50% 50% 0 0;
+/*  
+span {
+  background-color: orange;
+  margin: 50px;
+  padding: 50px;
 }
+*/
 
-div.first + div {
-  border-left: 10px solid purple;
-}
-
-div.most-inner {
-  border-radius: 50%
-}
-
-div.first.most-inner::before {
-  content: 'Ő';
-}
-
-div.first.most-inner::after {
-  content: 'Másik szó';
+.box {
+  border: 5px solid rgb(17, 105, 121);
+  background-color: rgba(17, 105, 121, 0.1);
+  border-radius: 5px;
+  width:200px;
+  /*
+  float: left;
+  margin-right: 10px;
+  height: 200px;
+  */
+  /* 
   position: fixed;
-  display: block;
-  right: 0;
-  bottom: 0;
-  width: 100px;
-  height: 100px;
-  background-color: #009bd3;
+  left: 30px;
+  top: 30px;
+  */
+  
+
 }
 
+h2 {
 
-div { 
-  height: 100vh;
-  width: 100vh;
-  background-color: #0700d3;
+  /*
+  clear: both;
+  */
 }
 
-div > div {
-  height: 90vh;
-  width: 90vh;
-  background-color: #009bd3;
+.wrapper {
+  border: 1px solid #333;
+  /*position: relative;*/
 }
 
-div > div > div {
-  height: 80vh;
-  width: 80vh;
-  background-color: #47e7e2;
+.main ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
 }
 
-div > div > div > div {
-  height: 70vh;
-  width: 70vh;
-  background-color: #0fde77;
+.main li {
+  display: inline-block;
+  padding: 0 20px;
 }
 
-div > div > div > div > div {
-  height: 60vh;
-  width: 60vh;
-  background-color: #2fefb2;
+.main a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-div > div > div > div > div > div {
-  height: 50vh;
-  width: 50vh;
-  background-color: #2fef62;
-}
-
-div > div > div > div > div > div > div {
-  height: 40vh;
-  width: 40vh;
-  background-color: #a9ef2f;
-}
-
-div > div > div > div > div > div > div > div {
-  height: 30vh;
-  width: 30vh;
-  background-color: #e5ef2f;
-}
-
-div > div > div > div > div > div > div > div > div {
-  height: 20vh;
-  width: 20vh;
-  background-color: #efc22f;
-}
-
-div > div > div > div > div > div > div > div > div > div {
-  height: 10vh;
-  width: 10vh;
-  background-color: #ef6f2f;
+nav.main {
+  background-color: #333;
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
